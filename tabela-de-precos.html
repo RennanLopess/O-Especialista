@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Preços | O Especialista</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .btn-dourado {
+            background-color: #000;
+            color: #FFD700;
+            border: 2px solid #FFD700;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-dourado:hover {
+            background-color: #FFD700;
+            color: #000;
+            border-color: #000;
+            transform: scale(1.05);
+        }
+
+        .tabela-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            background-color: #1a1a1a;
+        }
+
+        th,
+        td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+
+        th {
+            color: #FFD700;
+            font-weight: 600;
+        }
+
+        td {
+            color: #ddd;
+        }
+
+        tr:hover {
+            background-color: #292929;
+        }
+
+        .tabela-container {
+            overflow-x: auto;
+            width: 100%;
+        }
+
+        .tabela-container table {
+            min-width: 700px;
+            /* força rolagem horizontal no mobile */
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .tabela-container th,
+        .tabela-container td {
+            padding: 16px;
+            text-align: left;
+        }
+
+        .tabela-container th {
+            color: #facc15;
+            /* amarelo dourado */
+        }
+
+        .tabela-container td {
+            color: #d1d5db;
+            /* cinza claro */
+        }
+
+        .tabela-container tr:hover {
+            background-color: #292929;
+        }
+
+        @media (max-width: 768px) {
+            .tabela-container {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+    <!-- Cabeçalho -->
+    <header class="py-6 border-b border-yellow-500">
+        <div class="container mx-auto px-4 py-4">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <img src="img/logo.jpg" alt="Logo" class="h-8 w-auto">
+                    <span class="text-2xl font-bold text-white">O Especialista</span>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=5543991076777&fbclid=PAZXh0bgNhZW0CMTEAAaff_BPa6clY4rX1Nmhpk0CmNAbE2OIAZTquKgIrJw2LcVG4JoSj4tZ8sI39WQ_aem_wNXqDr0lqm-1TyPB7Q8Ltg"
+                    target="_blank"><button
+                        class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-lg font-semibold transition-colors">Agendar</button></a>
+            </nav>
+    </header>
+
+    <!-- Conteúdo -->
+    <main class="flex-grow py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-4">Tabela de <span class="text-yellow-500">Preços</span></h2>
+            <p class="text-center text-gray-400 mb-10">Confira os valores atualizados de nossos serviços automotivos.
+            </p>
+
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Serviço</th>
+                            <th>Descrição</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lavagem Premium Carros de Passeio</td>
+                            <td>Brilho e remoção de riscos superficiais</td>
+                            <td>R$ 120,00</td>
+                        </tr>
+                        <tr>
+                            <td>Lavagem Premium SUV'S/CAMIONETES/UTILITÁRIOS</td>
+                            <td>Correção de pintura e riscos profundos</td>
+                            <td>R$ 150,00</td>
+                        </tr>
+                        <tr>
+                            <td>Lavação do Motor</td>
+                            <td>Proteção cerâmica com brilho intenso</td>
+                            <td>R$ 150,00</td>
+                        </tr>
+                        <tr>
+                            <td>Higienização Interna do Teto</td>
+                            <td>Cera, pneu pretinho e aspiração</td>
+                            <td>R$ 150,00</td>
+                        </tr>
+                        <tr>
+                            <td>Higienização de Bancos de Couro</td>
+                            <td>Tratamento especial para SUVs</td>
+                            <td>R$ 250,00</td>
+                        </tr>
+                        <tr>
+                            <td>Higienização De Bancos de Tecido</td>
+                            <td>Película protetora transparente</td>
+                            <td>R$ 300,00</td>
+                        </tr>
+                        <tr>
+                            <td>Limpeza Americana</td>
+                            <td>Proteção UV e controle térmico</td>
+                            <td>R$ 1.200,00</td>
+                        </tr>
+                        <tr>
+                            <td>Desoxidação de Vidros + Impermeabilização</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 300,00</td>
+                        </tr>
+                        <tr>
+                            <td>Impermeabilização do PARA-BRISA</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 100,00</td>
+                        </tr>
+                        <tr>
+                            <td>Polimento de Farol</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 120,00</td>
+                        </tr>
+                        <tr>
+                            <td>Polimento Comercial Carros de Passeio</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 800,00</td>
+                        </tr>
+                        <tr>
+                            <td>Polimento Técnico Carros de Passeio</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 1.200,00</td>
+                        </tr>
+                        <tr>
+                            <td>Vitrificação LITE (CARPRO) Carros de Passeio</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 1.500,00</td>
+                        </tr>
+                        <tr>
+                            <td>Polimento Comercial SUV'S/CAMIONETES</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 900,00</td>
+                        </tr>
+                        <tr>
+                            <td>Polimento Técnico SUV'S/CAMIONETES</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 1.500,00</td>
+                        </tr>
+                        <tr>
+                            <td>Vitrificação LITE (CARPRO) SUV'S/CAMIONETES</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 2.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>Vitrificação CARPRO DIAMANTE Carros de Passeio</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 2.500,00</td>
+                        </tr>
+                        <tr>
+                            <td>Vitrificação CARPRO DIAMANTE SUV'S/CAMIONETES</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 3.500,00</td>
+                        </tr>
+                        <tr>
+                            <td>Vitrificação CARPRO (SIC) 3 anos Camionetes</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 3.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>Polimento de Motos</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 400,00</td>
+                        </tr>
+                        <tr>
+                            <td>Vitrificação CARPRO DIAMANTE Motos</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 1.200,00</td>
+                        </tr>
+                        <tr>
+                            <td>Vitrificação CARPRO (SIC) 3 anos Carros de Passeio</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 2.500,00</td>
+                        </tr>
+                        <tr>
+                            <td>Kit FULL PPF frontal + Kit Acessórios</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 6.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>Polimento de Vidros Completo</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 900,00</td>
+                        </tr>
+                        <tr>
+                            <td>Envelopamento Black Piano</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 900,00</td>
+                        </tr>
+                        <tr>
+                            <td>Detalhamento Interno FULL</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 1.500,00</td>
+                        </tr>
+                        <tr>
+                            <td>PPF Tela Multimidia</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 300,00</td>
+                        </tr>
+                        <tr>
+                            <td>Enceramento Mecânico</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 1.200,00</td>
+                        </tr>
+                        <tr>
+                            <td>Envelopamento</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 350,00</td>
+                        </tr>
+                        <tr>
+                            <td>Preparação Para Venda Carro de Passeio</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 800,00</td>
+                        </tr>
+                        <tr>
+                            <td>Preparação Para Venda Camionetes</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 1.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>Lavagem Big truck</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 1.200,00</td>
+                        </tr>
+                        <tr>
+                            <td>Kit Base de PPF</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 250,00</td>
+                        </tr>
+                        <tr>
+                            <td>Polimento de PARA-BRISA Carro de Passeio</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 450,00</td>
+                        </tr>
+                        <tr>
+                            <td>Lavagem ESPECIALISTA (pequeno/médio)</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 350,00</td>
+                        </tr>
+                        <tr>
+                            <td>Lavagem ESPECIALISTA (camionetes)</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 450,00</td>
+                        </tr>
+                        <tr>
+                            <td>Remoção de Insulfilm</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 150,00</td>
+                        </tr>
+                        <tr>
+                            <td>Vitrificação em Bancos de Couro</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 450,00</td>
+                        </tr>
+                        <tr>
+                            <td>Aplicação de Película Cerâmica (térmica) em PARA-BRISA</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 300,00</td>
+                        </tr>
+                        <tr>
+                            <td>Pacote Carro Zero</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 900,00</td>
+                        </tr>
+                        <tr>
+                            <td>Kit Interno - Console e Painel</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 400,00</td>
+                        </tr>
+                        <tr>
+                            <td>Tratamento com Ozônio</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 400,00</td>
+                        </tr>
+                        <tr>
+                            <td>Preparação Para Venda Moto</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 350,00</td>
+                        </tr>
+                        <tr>
+                            <td>Proteção Para Tapetes</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 50,00</td>
+                        </tr>
+                        <tr>
+                            <td>PPF FULL em Carros de Passeio</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 15.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>Envelopamento FULL</td>
+                            <td>Mudança total/parcial da cor</td>
+                            <td>R$ 16.000,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="index.html" class="btn-dourado">Voltar para Página Principal</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="py-6 text-center text-gray-500 border-t border-gray-700">
+        © 2025 O Especialista. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
